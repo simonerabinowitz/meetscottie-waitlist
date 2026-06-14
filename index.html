@@ -596,10 +596,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    /* beehiiv's iframe is stuck at 2000px tall; clip it to the pill so it
+       doesn't overflow and cover the content below */
+    overflow: hidden;
   }
   /* Override beehiiv's default button to use strawberry */
   .beehiiv-form-wrap iframe {
     width: 100% !important;
+    height: 64px !important;
     border: none !important;
   }
   </style>
@@ -616,7 +620,7 @@
 
   <!-- HERO -->
   <header class="wl-fade" style="max-width:540px;width:100%;text-align:center;padding-top:60px;">
-    <h1 style="font-family:var(--font-display);font-weight:800;font-size:clamp(38px,8.5vw,56px);line-height:1.04;letter-spacing:-0.035em;margin:0 0 18px;">stop researching.<br><span style="color:var(--c-strawberry);">start living.</span></h1><p style="font-size:17px;line-height:1.55;color:var(--text-secondary);max-width:420px;margin:0 auto;">your mom friends' best friend.</p><p></p>
+    <h1 style="font-family:var(--font-display);font-weight:800;font-size:clamp(38px,8.5vw,56px);line-height:1.04;letter-spacing:-0.035em;margin:0 0 18px;">stop searching.<br><span style="color:var(--c-strawberry);">start living.</span></h1><p style="font-size:17px;line-height:1.55;color:var(--text-secondary);max-width:420px;margin:0 auto;">your mom friend's best friend.</p><p></p>
     
   </header>
 
